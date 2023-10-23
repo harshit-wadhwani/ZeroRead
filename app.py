@@ -8,6 +8,11 @@ from langchain.embeddings import GooglePalmEmbeddings
 from langchain.llms import GooglePalm
 import os, glob
 
+__import__('pysqlite3')
+import sys
+
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 st.set_page_config(page_title="ZeroRead", layout="wide",page_icon="📚",initial_sidebar_state="expanded")
 
 prompt_template  = """

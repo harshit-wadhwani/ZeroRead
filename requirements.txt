@@ -189,3 +189,4 @@ Werkzeug==2.3.7
 WTForms==3.0.1
 yarl==1.9.2
 zipp==3.17.0
+pysqlite3-binary
