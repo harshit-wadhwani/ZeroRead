@@ -138,7 +138,6 @@ python-magic==0.4.27
 python-multipart==0.0.6
 pytz==2023.3.post1
 pytz-deprecation-shim==0.1.0.post0
-pywin32==306
 PyYAML==6.0.1
 rapidfuzz==3.4.0
 referencing==0.30.2
