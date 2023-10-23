@@ -31,7 +31,7 @@ with st.sidebar:
     st.markdown(
         """
     ## About
-    This app is an LLM-powered chatbot built By Harshit Wadhwani:
+    This app is an LLM-powered agent built By Harshit Wadhwani:
     - [Linkedin](https://www.linkedin.com/in/harshitwadhwani/)
     - [Email ](mailto:harshit4work@gmail.com)
     - [Github](https://github.com/harshit-wadhwani) 
