@@ -45,6 +45,7 @@ load_dotenv()
 
 def main():
     st.header("ZeroRead 📚💬")
+    st.write("Books that are used are exactly from our syllabbus and are available [here](https://drive.google.com/drive/folders/1fbdrnSsf4zO2cI7R8mi57YuWVstkoIK5?usp=share_link)")
     os.environ['GOOGLE_API_KEY'] = st.secrets['GOOGLE_API_KEY']
 
     select_subject = st.selectbox("Pick a Subject", ["18AI744-Business Intelligence", "18AI734-Cloud Computing"])
