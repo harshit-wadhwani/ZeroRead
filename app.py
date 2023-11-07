@@ -48,7 +48,7 @@ def main():
     st.write("Books that are used are exactly from our syllabus and are available [here](https://drive.google.com/drive/folders/1fbdrnSsf4zO2cI7R8mi57YuWVstkoIK5?usp=share_link)")
     os.environ['GOOGLE_API_KEY'] = st.secrets['GOOGLE_API_KEY']
 
-    select_subject = st.selectbox("Pick a Subject", ["18AI744-Business Intelligence", "18AI734-Cloud Computing"])
+    select_subject = st.selectbox("Pick a Subject", ["18AI744-Business Intelligence", "18AI734-Cloud Computing", "18AI72-Machine-Learning (Mod-1,3,4,5)"])
     
     embeddings=GooglePalmEmbeddings()
 
