@@ -26,10 +26,6 @@ Question: {question}
 
 prompt = PromptTemplate(template = prompt_template , input_variables=["context", "question"])
 
-
-
-    
-
 load_dotenv()
 
 def main():
