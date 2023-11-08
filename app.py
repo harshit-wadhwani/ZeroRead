@@ -7,6 +7,7 @@ from langchain.prompts import PromptTemplate
 from langchain.embeddings import GooglePalmEmbeddings
 from langchain.llms import GooglePalm
 import os, glob
+from design import image, link, layout, footer
 
 __import__('pysqlite3')
 import sys
@@ -25,20 +26,8 @@ Question: {question}
 
 prompt = PromptTemplate(template = prompt_template , input_variables=["context", "question"])
 
-# Sidebar contents
-with st.sidebar:
-    st.title("Built by - [Harshit Wadhwani](https://www.linkedin.com/in/harshitwadhwani/)")
-    st.markdown(
-        """
-    ## About
-    This is an LLM-powered(Google Palm) application, if you further support contact me on:
-    - [Linkedin](https://www.linkedin.com/in/harshitwadhwani/)
-    - [Email](mailto:harshit4work@gmail.com)
-    - [Github](https://github.com/harshit-wadhwani) 
- 
-    """
-    )
-    add_vertical_space(5)
+
+
     
 
 load_dotenv()
@@ -73,7 +62,11 @@ def main():
         with st.expander("TextBook -  Context"):
             for doc in response["source_documents"]:
                 st.write(f"{doc.metadata['source']} \n {doc.page_content}")
+                
+
 
 
 if __name__ == "__main__":
     main()
+    footer()
+    
