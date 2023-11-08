@@ -17,7 +17,7 @@ sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 st.set_page_config(page_title="ZeroRead", layout="wide",page_icon="📚",initial_sidebar_state="expanded")
 
 prompt_template  = """
-Use the following piece of context to answer the question. Please provide a detailed response, that should be long for each of the question. Provide formula or code from the context for whichever question possible.
+Use the following piece of context to answer the question. Please provide a detailed response, that should be long for each of the question. Provide formula or python code from the context for whichever question possible.
 
 {context}
 
